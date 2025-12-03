@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe</title>
+    <meta name="description" content="Служба підтримки StreamVibe. Отримайте допомогу з підпискою, технічними питаннями та роботою сервісу. Ми завжди готові допомогти!">
+    <link rel="icon" type="image/png" href="./assets/img/icon-img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/img/logo.png" alt="StreamVibe логотип">
+        </a>
+
+        <nav id="headerNav" class="header-nav">
+            <div id="burgerMenuClose" class="burger-menu d-none">
+                <i id="closeIcon" class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="main-menu">
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./movies-n-shows.html">Фільми та серіали</a></li>
+                <li class="highlighted-nav"><a href="#Підримка">Підтримка</a></li>
+                <li><a href="./subscribtion.html">Підписки</a></li>
+            </ul>
+        </nav>
+
+        <div id="burgerMenuOpen" class="burger-menu">
+            <img id="openIcon" class="open-icon" src="./assets/icons/open-icon-burger.svg" alt="Відкрити меню навігації">
+        </div>
+
+        <div class="box-help">
+            <img src="./assets/icons/search-icon.svg" alt="Пошук">
+            <img src="./assets/icons/notification.svg" alt="Сповіщення">
+        </div>
+    </header>
+    <main>
+        <section class="support change-wrapper">
+            <div class="support-info">
+                <div class="text-box">
+                    <h2>Ми забезпечуємо стрімінг-досвід на різних пристроях</h2>
+                    <p class="regular-text">З StreamVibe ви можете насолоджуватися улюбленими фільмами та серіалами будь-коли, будь-де.</p>
+                </div>
+                <img src="./assets/img/support.png" alt="Служба підтримки StreamVibe">
+            </div>
+            <div class="support-form">
+                <button id="open-modal" class="btn">Відкрити форму</button>
+
+                <div id="modal-overlay" class="modal-overlay"> </div>
+
+                <form id="contact-form" class="support-container">
+                    <span class="close-modal">&times;</span>
+                    <div class="change-wrapper">
+                        <div class="form-group">
+                            <label for="first-name">Ім'я</label>
+                            <input placeholder="Ім'я" type="text" id="first-name" name="first-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Прізвище</label>
+                            <input placeholder="Прізвище" type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="change-wrapper">
+                        <div class="form-group">
+                            <label for="email">Електронна адреса</label>
+                            <input placeholder="Електронна адреса" type="email" id="email" name="email" minlength="6"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефону</label>
+                            <div class="row-wrapper">
+                                <select class="lang">
+                                    <option value="in">Індія</option>
+                                    <option value="uk">Україна</option>
+                                    <option value="en">Великобританія</option>
+                                </select>
+                                <input placeholder="Номер телефону" type="text" id="phone" name="phone" minlength="6"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" placeholder="Ваше повідомлення..." name="message"></textarea>
+                    </div>
+                    <div class="send-message-wrapper change-wrapper">
+                        <label class="checkbox">
+                            <input type="checkbox" id="agreeCheckbox" required>
+                            <span class="custom"></span>
+                            <p class="regular-text">Я погоджуюсь з Умовами використання та Політикою конфіденційності</p>
+                        </label>
+
+                        <button type="submit" class="submit-btn btn">Відправити повідомлення</button>
+                    </div>
+                    <div id="form-response" style="margin-top:10px;color:green;"></div>
+                </form>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="text-box">
+                <div>
+                    <h2>Поширені запитання</h2>
+                    <p class="regular-text">Маєте запитання? У нас є відповіді! Перевірте наш розділ FAQ, щоб знайти
+                        відповіді на найпоширеніші запитання про StreamVibe.</p>
+                </div>
+                <a class="btn" href="#">Задати питання</a>
+            </div>
+            <div class="questions-wrapper" id="questionsContainer">
+                <!-- Питання будуть додані через JS -->
+            </div>
+        </section>
+        <section class="trial">
+            <div class="trial-card">
+                <div class="text-box">
+                    <h2>Почніть безкоштовний пробний період сьогодні!</h2>
+                    <p class="regular-text">Це чіткий та лаконічний заклик до дії, який заохочує користувачів зареєструватися для безкоштовного пробного періоду StreamVibe.</p>
+                </div>
+                <a class="btn" href="./subscribtion.html">Почати безкоштовний пробний період</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <nav class="footer-wrap">
+                <!-- 1 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Головна</a>
+                        <ul>
+                            <li><a href="#">Категорії</a></li>
+                            <li><a href="#">Пристрої</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 2 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Фільми</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 3 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Серіали</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 4 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підтримка</a>
+                        <ul>
+                            <li><a href="#">Зв'язатися з нами</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 5 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підписка</a>
+                        <ul>
+                            <li><a href="#">Плани</a></li>
+                            <li><a href="#">Функції</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 6 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Зв'язатися з нами</a>
+                        <ul class="box-social_media">
+                            <li>
+                                <a href="#"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="policy-wrap">
+                <p class="regular-text">@2023 streamvib, Всі права захищені</p>
+                <div class="box-policy">
+                    <p class="regular-text"><a href="#">Умови використання</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика конфіденційності</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика cookie</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/modal-form.js"></script>
+    <script src="./assets/js/burger-menu.js"></script>
+    <script src="./assets/js/questions.js"></script>
+</body>
+
+</html>

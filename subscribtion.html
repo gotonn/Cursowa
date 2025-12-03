@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підписки StreamVibe</title>
+    <meta name="description"
+        content="Оберіть ідеальну підписку на StreamVibe. Базовий, Стандартний та Преміум плани для перегляду фільмів та серіалів.">
+    <link rel="icon" type="image/png" href="./assets/img/icon-img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/img/logo.png" alt="StreamVibe логотип">
+        </a>
+
+        <nav id="headerNav" class="header-nav">
+            <div id="burgerMenuClose" class="burger-menu d-none">
+                <i id="closeIcon" class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="main-menu">
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./movies-n-shows.html">Фільми та серіали</a></li>
+                <li><a href="./support.html">Підтримка</a></li>
+                <li class="highlighted-nav"><a href="#Підписки">Підписки</a></li>
+            </ul>
+        </nav>
+
+        <div id="burgerMenuOpen" class="burger-menu">
+            <img id="openIcon" class="open-icon" src="./assets/icons/open-icon-burger.svg"
+                alt="Відкрити меню навігації">
+        </div>
+
+        <div class="box-help">
+            <img src="./assets/icons/search-icon.svg" alt="Пошук">
+            <img src="./assets/icons/notification.svg" alt="Сповіщення">
+        </div>
+    </header>
+    <main class="none-home-page subscription">
+        <section class="plans">
+            <div class="text-box">
+                <div>
+                    <h2>Оберіть план, який підходить саме вам</h2>
+                    <p class="regular-text">Приєднуйтесь до StreamVibe та оберіть з наших гнучких варіантів підписки,
+                        адаптованих під ваші вподобання перегляду. Готуйтеся до безперервних розваг!</p>
+                </div>
+                <div class="plan-switcher">
+                    <p class="highlighted text-plan" onclick="switchPlan('monthly')">Щомісячно</p>
+                    <p class="text-plan" onclick="switchPlan('yearly')">Щорічно</p>
+                </div>
+            </div>
+            <div class="plans-wrapper" id="plansContainer">
+                <!-- Плани будуть додані через JS -->
+            </div>
+        </section>
+        <section class="plan-details">
+            <div class="text-box">
+                <h2>Порівняйте наші плани та знайдіть ідеальний для вас</h2>
+                <p class="regular-text">StreamVibe пропонує три різні плани для ваших потреб: Базовий, Стандартний та
+                    Преміум. Порівняйте функції кожного плану та оберіть той, що підходить саме вам.</p>
+            </div>
+            <div class="plan-details-wrapper-mobile">
+                <div class="plan-type">
+                    <p>Базовий</p>
+                    <p class="highlighted-choise">Стандартний</p>
+                    <p>Преміум</p>
+                </div>
+                <div class="details-wrapper">
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Ціна</h3>
+                            <p>₴120.99/місяць</p>
+                        </div>
+                        <div class="plan-details-wrapper">
+                            <h3>Безкоштовний пробний період</h3>
+                            <p>7 днів</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Контент</h3>
+                            <p>Доступ до ширшого вибору фільмів та серіалів, включаючи більшість нових релізів та
+                                ексклюзивний контент</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Пристрої</h3>
+                            <p>Перегляд на двох пристроях одночасно</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Скасування будь-коли</h3>
+                            <p>Так</p>
+                        </div>
+                        <div class="plan-details-wrapper">
+                            <h3>HDR</h3>
+                            <p>Так</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Dolby Atmos</h3>
+                            <p>Так</p>
+                        </div>
+                        <div class="plan-details-wrapper">
+                            <h3>Без реклами</h3>
+                            <p>Так</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="plan-details-wrapper">
+                            <h3>Офлайн-перегляд</h3>
+                            <p>Так, для обраних назв.</p>
+                        </div>
+                        <div class="plan-details-wrapper">
+                            <h3>Сімейний доступ</h3>
+                            <p>5 членів сім'ї.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Функції</th>
+                            <th>Базовий</th>
+                            <th class="popular-col">
+                                Стандартний
+                                <span class="badge-popular">Популярний</span>
+                            </th>
+                            <th>Преміум</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Ціна</td>
+                            <td>₴99.99/місяць</td>
+                            <td>₴120.99/місяць</td>
+                            <td>₴140.99/місяць</td>
+                        </tr>
+
+                        <tr>
+                            <td>Контент</td>
+                            <td>Доступ до широкого вибору фільмів та серіалів, включаючи деякі нові релізи.</td>
+                            <td>Доступ до ширшого вибору фільмів та серіалів, включаючи більшість нових релізів та
+                                ексклюзивний контент.</td>
+                            <td>Доступ до найширшого вибору фільмів та серіалів, включаючи всі нові релізи та
+                                офлайн-перегляд</td>
+                        </tr>
+
+                        <tr>
+                            <td>Пристрої</td>
+                            <td>Перегляд на одному пристрої одночасно</td>
+                            <td>Перегляд на двох пристроях одночасно</td>
+                            <td>Перегляд на чотирьох пристроях одночасно</td>
+                        </tr>
+
+                        <tr>
+                            <td>Безкоштовний пробний період</td>
+                            <td>7 днів</td>
+                            <td>7 днів</td>
+                            <td>7 днів</td>
+                        </tr>
+
+                        <tr>
+                            <td>Скасування будь-коли</td>
+                            <td>Так</td>
+                            <td>Так</td>
+                            <td>Так</td>
+                        </tr>
+
+                        <tr>
+                            <td>HDR</td>
+                            <td>Ні</td>
+                            <td>Так</td>
+                            <td>Так</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dolby Atmos</td>
+                            <td>Ні</td>
+                            <td>Так</td>
+                            <td>Так</td>
+                        </tr>
+
+                        <tr>
+                            <td>Без реклами</td>
+                            <td>Ні</td>
+                            <td>Так</td>
+                            <td>Так</td>
+                        </tr>
+
+                        <tr>
+                            <td>Офлайн-перегляд</td>
+                            <td>Ні</td>
+                            <td>Так, для обраних назв.</td>
+                            <td>Так, для всіх назв.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Сімейний доступ</td>
+                            <td>Ні</td>
+                            <td>Так, до 5 членів сім'ї.</td>
+                            <td>Так, до 6 членів сім'ї.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="trial">
+            <div class="trial-card">
+                <div class="text-box">
+                    <h2>Почніть безкоштовний пробний період сьогодні!</h2>
+                    <p class="regular-text">Це чіткий та лаконічний заклик до дії, який заохочує користувачів
+                        зареєструватися для безкоштовного пробного періоду StreamVibe.</p>
+                </div>
+                <a class="btn" href="#Підписка">Почати безкоштовний пробний період</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <nav class="footer-wrap">
+                <!-- 1 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Головна</a>
+                        <ul>
+                            <li><a href="#">Категорії</a></li>
+                            <li><a href="#">Пристрої</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 2 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Фільми</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 3 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Серіали</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 4 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підтримка</a>
+                        <ul>
+                            <li><a href="#">Зв'язатися з нами</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 5 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підписка</a>
+                        <ul>
+                            <li><a href="#">Плани</a></li>
+                            <li><a href="#">Функції</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 6 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Зв'язатися з нами</a>
+                        <ul class="box-social_media">
+                            <li>
+                                <a href="#"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="policy-wrap">
+                <p class="regular-text">@2023 streamvib, Всі права захищені</p>
+                <div class="box-policy">
+                    <p class="regular-text"><a href="#">Умови використання</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика конфіденційності</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика cookie</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/burger-menu.js"></script>
+    <script src="./assets/js/plans.js"></script>
+</body>
+
+</html>

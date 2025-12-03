@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фільми та серіали</title>
+    <meta name="description"
+        content="Дивіться найкращі фільми та серіали на StreamVibe. Велика бібліотека контенту, HD якість, підписка для всієї родини.">
+    <link rel="icon" type="image/png" href="./assets/img/icon-img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/img/logo.png" alt="StreamVibe логотип">
+        </a>
+
+        <nav id="headerNav" class="header-nav">
+            <div id="burgerMenuClose" class="burger-menu d-none">
+                <i id="closeIcon" class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="main-menu">
+                <li><a href="./index.html">Головна</a></li>
+                <li class="highlighted-nav"><a href="#Фільми_та_шоу">Фільми та серіали</a></li>
+                <li><a href="./support.html">Підтримка</a></li>
+                <li><a href="./subscribtion.html">Підписки</a></li>
+            </ul>
+        </nav>
+
+        <div id="burgerMenuOpen" class="burger-menu">
+            <img id="openIcon" class="open-icon" src="./assets/icons/open-icon-burger.svg"
+                alt="Відкрити меню навігації">
+        </div>
+
+        <div class="box-help">
+            <img src="./assets/icons/search-icon.svg" alt="Пошук фільмів та серіалів">
+            <img src="./assets/icons/notification.svg" alt="Сповіщення">
+        </div>
+    </header>
+    <main class="none-home-page">
+        <section class="prewatching">
+            <div class="prewatching-wrapper banner">
+                <div class="title-wrapper">
+                    <h2>Месники: Фінал</h2>
+                    <p>За допомогою союзників, що залишилися, Месники повинні зібратися ще раз, щоб скасувати дії Таноса
+                        та безлад у всесвіті, незалежно від наслідків і незалежно від того, з ким вони зіткнуться...
+                        Помститися за загиблих.</p>
+                </div>
+                <div class="prewatching-actions-wrapper">
+                    <a class="btn" href="">
+                        <img src="./assets/icons/pause-icon.svg" alt="Відтворити фільм">
+                        <span>Дивитися зараз</span>
+                    </a>
+                    <div class="actions-wrapper">
+                        <div class="action-box">
+                            <img src="./assets/icons/add.svg" alt="Додати до мого списку">
+                        </div>
+                        <div class="action-box">
+                            <img src="./assets/icons/like.svg" alt="Вподобати фільм">
+                        </div>
+                        <div class="action-box">
+                            <img src="./assets/icons/sound.svg" alt="Налаштування звуку">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-show-wrapper">
+                    <div class="nav-box">
+                        <img src="./assets/icons/arrow-left.svg" alt="Попередній фільм">
+                    </div>
+                    <div class="nav-indicators-box">
+                        <div class="indicator active"></div>
+                        <div class="indicator"></div>
+                        <div class="indicator"></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="nav-box">
+                        <img src="./assets/icons/arrow-right.svg" alt="Наступний фільм">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movies-n-shows">
+            <div class="plan-type">
+                <p class="highlighted-choise">Фільми</p>
+                <p>Серіали</p>
+            </div>
+            <div class="movies">
+                <p class="mark">Фільми</p>
+
+                <div id="moviesContainer" class="sections-container">
+                    <!-- Секції будуть створені через JS -->
+                </div>
+            </div>
+            <div class="shows">
+                <p class="mark">Серіали</p>
+                <div id="showsContainer" class="sections-container">
+                    <!-- Секції будуть створені через JS -->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="trial">
+            <div class="trial-card">
+                <div class="text-box">
+                    <h2>Почніть безкоштовний пробний період сьогодні!</h2>
+                    <p class="regular-text">Це чіткий та лаконічний заклик до дії, який заохочує користувачів
+                        зареєструватися для безкоштовного пробного періоду StreamVibe.</p>
+                </div>
+                <a class="btn" href="./subscribtion.html">Почати безкоштовний пробний період</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <nav class="footer-wrap">
+                <!-- 1 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Головна</a>
+                        <ul>
+                            <li><a href="#">Категорії</a></li>
+                            <li><a href="#">Пристрої</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 2 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Фільми</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 3 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Серіали</a>
+                        <ul>
+                            <li><a href="#">Жанри</a></li>
+                            <li><a href="#">Тренди</a></li>
+                            <li><a href="#">Нові релізи</a></li>
+                            <li><a href="#">Популярні</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 4 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підтримка</a>
+                        <ul>
+                            <li><a href="#">Зв'язатися з нами</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 5 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Підписка</a>
+                        <ul>
+                            <li><a href="#">Плани</a></li>
+                            <li><a href="#">Функції</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 6 -->
+                <ul class="footer-card">
+                    <li class="heading-nav">
+                        <a href="#">Зв'язатися з нами</a>
+                        <ul class="box-social_media">
+                            <li>
+                                <a href="#"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="policy-wrap">
+                <p class="regular-text">@2023 streamvib, Всі права захищені</p>
+                <div class="box-policy">
+                    <p class="regular-text"><a href="#">Умови використання</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика конфіденційності</a></p>
+                    <div class="hr"></div>
+                    <p class="regular-text"><a href="#">Політика cookie</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/burger-menu.js"></script>
+    <script src="./assets/js/movies-n-shows.js"></script>
+</body>
+
+</html>
