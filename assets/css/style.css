@@ -1,7 +1,7 @@
 @import "normalize.css";
 
 /* ===== VARIABLES IMPORT ===== */
-@import url('/_variables.css');
+@import "_variables.css";
 
 /* ===== GLOBAL STYLES ===== */
 * {
